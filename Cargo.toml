@@ -1,0 +1,21 @@
+[package]
+name = "universal-wasm-loader"
+version = "0.1.0"
+edition = "2021"
+description = "A universal WebAssembly loader with WIT-aware ABI translation. Rust port of the universalWasmLoader spec."
+license = "MIT"
+repository = "https://github.com/jrmarcum/universalWasmLoader-rs"
+keywords = ["wasm", "webassembly", "wit", "wasmtime", "loader"]
+categories = ["wasm", "api-bindings"]
+readme = "README.md"
+
+[dependencies]
+wasmtime = "28"
+anyhow = "1"
+tokio = { version = "1", features = ["full"] }
+regex-lite = "0.1"
+once_cell = "1"
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls"] }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full", "test-util"] }
