@@ -23,3 +23,6 @@ target
 # Local AI-assisted development context — not for version control
 CLAUDE.md
 PORT_PROMPT.md
+
+# Upstream reference repo (cloned locally, not tracked)
+upstream/
